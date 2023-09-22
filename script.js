@@ -10,9 +10,9 @@ function rotateClockHands() {
     const seconds = now.getSeconds();
 
     // const hourDegree = (360 / 12) * hours + (360 / 60) * (minutes / 60);
-    const hourDegree = hours
+    const hourDegree = hours-24                                                                                                                         
     // const minuteDegree = (360 / 60) * minutes + (360 / 60) * (seconds / 60);
-    const minuteDegree =minutes
+    const minuteDegree =minutes-24
     const secondDegree = (360 / 60) * seconds;
 
     hourHand.style.transform = `rotate(${hourDegree}deg)`;
